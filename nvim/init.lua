@@ -4,8 +4,8 @@ local opt = vim.o
 local g = vim.g
 
 -- <leader> key. Defaults to `\`. Some people prefer space.
--- g.mapleader = ' '
--- g.maplocalleader = ' '
+g.mapleader = ' '
+g.maplocalleader = ' '
 
 opt.compatible = false
 
@@ -41,6 +41,8 @@ opt.undofile = true
 opt.splitright = true
 opt.splitbelow = true
 opt.cmdheight = 0
+opt.wrap = false
+opt.signcolumn = "yes"
 
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
@@ -94,7 +96,6 @@ vim.diagnostic.config {
 
 g.editorconfig = true
 
-vim.opt.colorcolumn = '100'
 
 -- Native plugins
 cmd.filetype('plugin', 'indent', 'on')

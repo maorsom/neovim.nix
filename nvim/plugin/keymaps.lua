@@ -88,7 +88,7 @@ end
 
 keymap.set('n', '[l', lleft, { silent = true, desc = 'cycle [l]oclist left' })
 keymap.set('n', ']l', lright, { silent = true, desc = 'cycle [l]oclist right' })
-keymap.set('n', '[L', vim.cmd.lfirst, { silent = true, desc = 'first [L]oclist entry' })
+
 keymap.set('n', ']L', vim.cmd.llast, { silent = true, desc = 'last [L]oclist entry' })
 
 -- Resize vertical splits

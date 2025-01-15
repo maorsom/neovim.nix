@@ -83,6 +83,12 @@ with final.pkgs.lib; let
     which-key-nvim
     oil-nvim
     catppuccin-nvim
+    nvim-autopairs
+    comment-nvim
+    dressing-nvim
+    noice-nvim
+    nui-nvim
+    nvim-notify
   ];
 
   extraPackages = with pkgs; [

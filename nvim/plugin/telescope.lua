@@ -7,10 +7,12 @@ vim.g.did_load_telescope_plugin = true
 
 local telescope = require("telescope")
 local actions = require("telescope.actions")
+
+vim.cmd.packadd('trouble');
 local transform_mod = require("telescope.actions.mt").transform_mod
 
 local trouble = require("trouble")
-local trouble_telescope = require("trouble.sources.telescope")
+local trouble_telescope_open = require("trouble.sources.telescope").open
 
 -- or create your custom action
 local custom_actions = transform_mod({
@@ -25,7 +27,7 @@ local telescope_mapping = {
   ["<C-k>"] = actions.move_selection_previous, -- move to prev result
   ["<C-j>"] = actions.move_selection_next, -- move to next result
   ["<C-q>"] = actions.send_to_qflist + custom_actions.open_trouble_qflist,
-  ["<C-t>"] = trouble_telescope.open,
+  ["<C-t>"] = trouble_telescope_open,
 }
 
 

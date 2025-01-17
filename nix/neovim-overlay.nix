@@ -85,7 +85,10 @@ with final.pkgs.lib; let
     noice-nvim
     nui-nvim
     nvim-notify
-    trouble-nvim
+    { 
+     plugin = trouble-nvim;
+     optional = true;
+    }
     todo-comments-nvim
   ];
 

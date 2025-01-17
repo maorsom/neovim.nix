@@ -2,7 +2,6 @@ if vim.g.did_load_telescope_plugin then
   return
 end
 vim.g.did_load_telescope_plugin = true
-print("HELLLLOOOOOOOOOO")
 
 local telescope = require("telescope")
 local actions = require("telescope.actions")

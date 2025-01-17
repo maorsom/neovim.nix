@@ -9,3 +9,4 @@ vim.g.did_load_plugins_plugin = true
 require('nvim-surround').setup()
 require('Comment').setup()
 require('todo-comments').setup()
+require('trouble').setup()

@@ -49,6 +49,7 @@ with final.pkgs.lib; let
     vim-fugitive # https://github.com/tpope/vim-fugitive/
     # ^ git integration plugins
     # telescope and extensions
+    trouble-nvim
     telescope-nvim # https://github.com/nvim-telescope/telescope.nvim/
     telescope-fzf-native-nvim # https://github.com/nvim-telescope/telescope-fzy-native.nvim
     # telescope-smart-history-nvim # https://github.com/nvim-telescope/telescope-smart-history.nvim
@@ -85,10 +86,6 @@ with final.pkgs.lib; let
     noice-nvim
     nui-nvim
     nvim-notify
-    { 
-     plugin = trouble-nvim;
-     optional = true;
-    }
     todo-comments-nvim
   ];
 

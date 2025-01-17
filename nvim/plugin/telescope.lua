@@ -3,12 +3,9 @@ if vim.g.did_load_telescope_plugin then
 end
 vim.g.did_load_telescope_plugin = true
 
---TODO fix this
-
 local telescope = require("telescope")
 local actions = require("telescope.actions")
 
-vim.cmd.packadd('trouble');
 local transform_mod = require("telescope.actions.mt").transform_mod
 
 local trouble = require("trouble")

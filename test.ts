@@ -1,8 +1,3 @@
-const message: string = "hello world";
+let MEssages = "test";
 
-function run() {
-  console.log(message);
-
-
-
-}
+console.log(MEssages)

@@ -99,7 +99,7 @@ with final.pkgs.lib; let
     prettierd
     nixfmt-rfc-style
     stylua
-    eslint_d
+    eslint
   ];
 in {
   # This is the neovim derivation

@@ -87,7 +87,7 @@ with final.pkgs.lib; let
     nui-nvim
     nvim-notify
     todo-comments-nvim
-    formatter-nvim
+    none-ls-nvim
   ];
 
   extraPackages = with pkgs; [

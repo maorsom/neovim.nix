@@ -1,7 +1,5 @@
-  let message: string  =   "hello world";
+let message: string = "hello world";
 
-  function run() {
-
-
-     console.log(message);
-  }
+function run() {
+  console.log(message);
+}

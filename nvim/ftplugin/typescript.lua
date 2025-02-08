@@ -1,12 +1,8 @@
 local ts_lsp_cmd = 'typescript-language-server'
 
-print("opened ts file")
-
 if vim.fn.executable(ts_lsp_cmd) ~= 1 then
   return
 end
-
-print("typescript is executable")
 
 local root_files = {
   'package.json',

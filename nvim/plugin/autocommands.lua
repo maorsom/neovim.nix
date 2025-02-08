@@ -18,3 +18,7 @@ vim.api.nvim_create_autocmd('BufEnter', {
     vim.opt.formatoptions = vim.opt.formatoptions - { 'c', 'r', 'o' }
   end,
 })
+
+vim.api.nvim_create_autocmd({"BufWritePost"}, {
+  command = "FormatWriteLock"
+})

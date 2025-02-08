@@ -87,6 +87,7 @@ with final.pkgs.lib; let
     nui-nvim
     nvim-notify
     todo-comments-nvim
+    formatter-nvim
   ];
 
   extraPackages = with pkgs; [
@@ -95,6 +96,7 @@ with final.pkgs.lib; let
     nil # nix LSP
     python312Packages.python-lsp-server
     typescript-language-server
+    nodePackages.prettier
   ];
 in {
   # This is the neovim derivation

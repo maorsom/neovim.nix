@@ -1,5 +1,8 @@
-let message: string = "hello world";
+const message: string = "hello world";
 
 function run() {
   console.log(message);
+
+
+
 }

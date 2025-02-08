@@ -96,7 +96,10 @@ with final.pkgs.lib; let
     nil # nix LSP
     python312Packages.python-lsp-server
     typescript-language-server
-    nodePackages.prettier
+    prettierd
+    nixfmt-rfc-style
+    stylua
+    eslint_d
   ];
 in {
   # This is the neovim derivation
